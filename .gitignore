@@ -1,0 +1,130 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+pip-wheel-metadata/
+.installed.cfg
+
+# ── Virtual Environments ───────────────────────────────────────────────────────
+leetcode_ml_env/
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# ── Jupyter Notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── ML Artifacts ──────────────────────────────────────────────────────────────
+saved_models/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+
+# ── Data Files ────────────────────────────────────────────────────────────────
+data/
+*.csv
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+*.feather
+
+# ── Node.js ───────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ── Environment Variables ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.staging
+# Keep .env.example files (they're templates, no secrets)
+!.env.example
+
+# ── React Build ───────────────────────────────────────────────────────────────
+client/build/
+client/dist/
+client/.next/
+client/out/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+*.log.*
+
+# ── OS Files ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.rar
+.cache/
+tmp/
+temp/
+
+# ── Python cache inside services ──────────────────────────────────────────────
+**/__pycache__/
+**/*.pyc
+
+# ── Specific large file types we missed ───────────────────────────────────────
+*.png                  # training curve images
+eval_metrics.json      # generated metrics
+
+# ── Ensure nested node_modules caught ─────────────────────────────────────────
+**/node_modules/
+
+# ── Ensure nested .env caught ─────────────────────────────────────────────────
+**/.env
+.env
+services/**/.env
+!**/.env.example
