@@ -298,7 +298,7 @@ class RecommendationEngine:
             scores    = self.cf(user_t, prob_t).cpu().numpy()
             return (scores - scores.min()) / (scores.max() - scores.min() + 1e-8)
         except Exception as e:
-            log.warning(f'CF scoring failed: {e}')
+            log.warning(f'CF scoring failed for user {user_id}: {e} — using zeros')
             return np.zeros(len(candidates))
 
     def _cb_scores(self, solved_ids: set, candidates: pd.DataFrame) -> np.ndarray:
